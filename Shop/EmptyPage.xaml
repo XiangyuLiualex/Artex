@@ -5,10 +5,16 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Shop"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="550" d:DesignWidth="1278"
       Title="EmptyPage">
 
     <Grid>
+        <Image x:Name="img1" Height="100" Width="100" Margin="1013,343,165,107" Source="/Images/art2.jpg"  Drop="image_Drop" AllowDrop="True"></Image>
+        <Canvas x:Name="canvas" AllowDrop="True" Background="Transparent" DragOver="Canvas_DragOver" Margin="30,81,270,119" >
+        <Image x:Name="DragObject" Source="/Images/art1.jpg" Height="100" Width="100" MouseMove="DragObject_MouseLeftButtonDown" />
+
         
+        </Canvas>
+       
     </Grid>
 </Page>

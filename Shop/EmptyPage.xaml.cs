@@ -22,5 +22,44 @@ namespace Shop
         {
             InitializeComponent();
         }
+
+        private void DragObject_MouseLeftButtonDown(object sender, MouseEventArgs e)
+        {
+            Image image = e.Source as Image;
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                
+                DragDrop.DoDragDrop(image, new DataObject(DataFormats.Serializable, image), DragDropEffects.Move);
+             
+            }
+            
+        }
+
+        private void image_Drop(object sender, DragEventArgs e)
+        {
+            object data = e.Data.GetData(DataFormats.Serializable);
+            if (data is UIElement element)
+            {
+                element.Visibility = Visibility.Hidden;
+            }
+
+
+            }
+        private void Canvas_DragOver(object sender, DragEventArgs e)
+        {
+            object data = e.Data.GetData(DataFormats.Serializable);
+
+            if (data is UIElement element)
+            {
+                Point dropPosition = e.GetPosition(canvas);
+                Canvas.SetLeft(element, dropPosition.X);
+                Canvas.SetTop(element, dropPosition.Y);
+
+                if (!canvas.Children.Contains(element))
+                {
+                    canvas.Children.Add(element);
+                }
+            }
+        }
     }
 }
