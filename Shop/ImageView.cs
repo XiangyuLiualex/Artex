@@ -16,9 +16,9 @@ namespace Shop
     /// <summary>
     /// Interaction logic for EmptyPage.xaml
     /// </summary>
-    public partial class EmptyPage : Page
+    public partial class ImageView : Page
     {
-        public EmptyPage()
+        public ImageView()
         {
             InitializeComponent();
         }
