@@ -23,3 +23,5 @@ C:\Users\kiley.carson\Desktop\CPSC481\Artex\WpfApp1\obj\Debug\WpfApp1_MarkupComp
 C:\Users\kiley.carson\Desktop\CPSC481\Artex\WpfApp1\obj\Debug\WpfApp1.exe
 C:\Users\kiley.carson\Desktop\CPSC481\Artex\WpfApp1\obj\Debug\WpfApp1.pdb
 C:\Users\kiley.carson\Desktop\CPSC481\Artex\WpfApp1\obj\Debug\page1.g.cs
+C:\Users\kiley.carson\Desktop\CPSC481\Artex\WpfApp1\obj\Debug\testWindow.g.cs
+C:\Users\kiley.carson\Desktop\CPSC481\Artex\WpfApp1\obj\Debug\NewCommission.g.cs

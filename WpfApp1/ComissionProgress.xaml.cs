@@ -17,20 +17,34 @@ namespace WpfApp1
     /// <summary>
     /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class CommissionProgress : Window
+    public partial class CommissionProgress : Page
     {
         public CommissionProgress()
         {
         }
-        private void CompleteForm_Click(object sender, RoutedEventArgs e)
+        public void CompleteForm_Click(object sender, RoutedEventArgs e)
         {
 
         }
-        private void AddNewCommission_Click(object sender, RoutedEventArgs e)
+        public void AddNewCommission_Click(object sender, RoutedEventArgs e)
         {
 
         }
-        
+
+        public void CommissionSearch()
+        {
+
+        }
+
+        public void CommissionStatusChanged()
+        {
+
+        }
+
+        public void ListBoxItem_Selected()
+        {
+
+        }
 
     }
 }

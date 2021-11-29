@@ -62,6 +62,9 @@
     <Compile Include="ComissionProgress.xaml.cs">
       <DependentUpon>ComissionProgress.xaml</DependentUpon>
     </Compile>
+    <Compile Include="testWindow.xaml.cs">
+      <DependentUpon>testWindow.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="NewCommission.cs" />
@@ -88,14 +91,20 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="AddComission.xaml">
+    <Page Include="NewCommission.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ComissionProgress.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="testWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

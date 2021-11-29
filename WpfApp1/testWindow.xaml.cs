@@ -15,28 +15,13 @@ using System.Windows.Shapes;
 namespace WpfApp1
 {
     /// <summary>
-    /// Interaction logic for AddComission.xaml
+    /// Interaction logic for testWindow.xaml
     /// </summary>
-    public partial class NewCommission : Page
+    public partial class testWindow : Window
     {
-        public NewCommission()
+        public testWindow()
         {
+            InitializeComponent();
         }
-        
-        private void SubmitButtonClick(object sender, RoutedEventArgs e)
-        {
-
-        }
-        
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
-        }
-   
     }
 }
