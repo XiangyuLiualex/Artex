@@ -1,0 +1,67 @@
+﻿<Page x:Class="Artex.ArtistSignupWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Artex"
+      mc:Ignorable="d" 
+      Title="ArtistSignupWindow" Height="730" Width="1278">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#ffe6c3" Offset="0.0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <StackPanel x:Name="WebsiteHeader" Orientation="Horizontal" Height="40" Background ="LightGray" Margin="0,0,0,690">
+            <Button x:Name="BackButton" Height ="30" Width="50" BorderThickness="0"  ToolTip="Return to last page" Background ="LightGray" BorderBrush="#643cff" Margin="10,0,0,0">
+                <Image Source="/Images/bbutton.png" />
+            </Button>
+            <Button x:Name="ForwardButton" Height ="30" Width="50" BorderThickness="0"  ToolTip="Return to last page" Background ="LightGray" BorderBrush="#643cff" Margin="10,0,0,0" >
+                <Image Source="/Images/bbutton.png" FlowDirection="RightToLeft"/>
+            </Button>
+            <TextBlock Margin="10" Width=" 500" Background ="White" FontSize="18" Text=" https://www.artex.com/"/>
+        </StackPanel>
+
+        <TextBlock  TextAlignment="Center" 
+                   VerticalAlignment="Top" FontSize="50" Margin="42,40,780,0" ><Run Text="Username"/><Run Language="zh-cn" Text="*"/><Run Text=":"/></TextBlock>
+        <TextBox Margin="54,128,759,515"  FontSize="30" TextAlignment="Center" VerticalContentAlignment="Center"
+                 Name="txt_userName" TextChanged="txt_userName_TextChanged" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.537"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="1.491"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBlock  TextAlignment="Center" 
+                   FontSize="50"  Margin="85,238,823,407"><Run Text="Password*:"/></TextBlock>
+        <TextBox Margin="63,331,753,316"  FontSize="30" TextAlignment="Center" VerticalContentAlignment="Center"
+            x:Name="txt_password" TextChanged="txt_password_TextChanged"/>
+        <TextBlock  TextAlignment="Center" 
+                   FontSize="50"  Margin="37,464,753,200"><Run Text="Confirm Password*:"/></TextBlock>
+        <TextBox Margin="63,559,753,85"  FontSize="30" TextAlignment="Center" VerticalContentAlignment="Center"
+            x:Name="txt_confirmPassword" TextChanged="txt_confirmPassword_TextChanged"/>
+
+        <TextBlock  TextAlignment="Center"  FontSize="50"  Margin="834,35,74,610"><Run Text="Name*："/></TextBlock>
+        <TextBox Margin="768,99,47,555"  FontSize="30" TextAlignment="Center" VerticalContentAlignment="Center" x:Name="txt_name" />
+        <TextBlock  TextAlignment="Center"  FontSize="50"  Margin="834,177,74,468"><Run Text="Email*:"/></TextBlock>
+        <TextBox Margin="768,246,47,407"  FontSize="30" TextAlignment="Center" VerticalContentAlignment="Center" x:Name="txt_email" />
+        <TextBlock  TextAlignment="Center"  FontSize="50"  Margin="796,338,38,307"><Run Text="Social media link:"/></TextBlock>
+        <TextBox Margin="768,411,47,243"  FontSize="30" TextAlignment="Center" VerticalContentAlignment="Center" x:Name="txt_sml" />
+        <TextBlock  TextAlignment="Center"  FontSize="50"  Margin="812,491,59,154"><Run Text="Self description:"/></TextBlock>
+        <TextBox Margin="768,569,47,85"  FontSize="30" TextAlignment="Center" VerticalContentAlignment="Center" x:Name="txt_sd" />
+
+
+
+
+
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Submit" Width="200" Height="80"
+                    x:Name="btn_submit"  Margin="550,550,80,0"  FontSize="40" Background="#ffc0c0" RenderTransformOrigin="50,0.528" Click="Submit_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

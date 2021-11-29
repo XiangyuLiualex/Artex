@@ -1,0 +1,45 @@
+﻿<Page x:Class="Artex.ViewerSignupWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Artex"
+      mc:Ignorable="d" 
+      Title="ViewerSignupWindow" Height="718" Width="1278">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#ffe6c3" Offset="0.0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <StackPanel x:Name="WebsiteHeader" Orientation="Horizontal" Background ="LightGray" Margin="0,0,0,680">
+            <Button x:Name="BackButton" Height ="30" Width="50" BorderThickness="0"  ToolTip="Return to last page" Background ="LightGray" BorderBrush="#643cff" Margin="10,0,0,0">
+                <Image Source="/Images/bbutton.png" />
+            </Button>
+            <Button x:Name="ForwardButton" Height ="30" Width="50" BorderThickness="0"  ToolTip="Return to last page" Background ="LightGray" BorderBrush="#643cff" Margin="10,0,0,0" >
+                <Image Source="/Images/bbutton.png" FlowDirection="RightToLeft"/>
+            </Button>
+            <TextBlock Margin="10" Width=" 500" Background ="White" FontSize="18" Text=" https://www.artex.com/"/>
+        </StackPanel>
+
+        <TextBlock  TextAlignment="Center" 
+                   VerticalAlignment="Top" FontSize="60" Margin="-11,57,11,0" ><Run Text="Username:"/></TextBlock>
+        <TextBox  Height="60" Margin="158,146,158,512"  FontSize="30" TextAlignment="Center" VerticalContentAlignment="Center"
+                 Name="txt_userName" TextChanged="txt_userName_TextChanged"/>
+        <TextBlock  TextAlignment="Center" 
+                   FontSize="60"  Margin="417,236,439,381"><Run Text="Password:"/></TextBlock>
+        <TextBox  Height="60" Margin="158,321,158,337"  FontSize="30" TextAlignment="Center" VerticalContentAlignment="Center"
+            x:Name="txt_password" TextChanged="txt_password_TextChanged"/>
+        <TextBlock  TextAlignment="Center" 
+                   FontSize="60"  Margin="391,405,340,212"><Run Text="Confirm Password:"/></TextBlock>
+        <TextBox  Height="60" Margin="158,490,158,168"  FontSize="30" TextAlignment="Center" VerticalContentAlignment="Center"
+            x:Name="txt_confirmPassword" TextChanged="txt_confirmPassword_TextChanged"/>
+
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Submit" Width="200" Height="80"
+                    x:Name="btn_submit"  Margin="530,570,80,0"  FontSize="40" Background="#ffc0c0" RenderTransformOrigin="50,0.528" Click="Submit_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
